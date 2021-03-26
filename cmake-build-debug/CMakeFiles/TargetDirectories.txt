@@ -1,0 +1,3 @@
+C:/Users/tomca/CLionProjects/DSA_trees_hashes/cmake-build-debug/CMakeFiles/DSA_trees_hashes.dir
+C:/Users/tomca/CLionProjects/DSA_trees_hashes/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/tomca/CLionProjects/DSA_trees_hashes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

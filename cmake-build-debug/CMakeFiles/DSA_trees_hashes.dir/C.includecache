@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/tomca/CLionProjects/DSA_trees_hashes/main.c
+C:/Users/tomca/CLionProjects/DSA2/AVL.h
+
+C:/Users/tomca/CLionProjects/DSA2/Red-Black.h
+
+C:/Users/tomca/CLionProjects/DSA2/main.c
 stdio.h
 -
 stdlib.h
 -
 time.h
 -
+AVL.h
+C:/Users/tomca/CLionProjects/DSA2/AVL.h
+Red-Black.h
+C:/Users/tomca/CLionProjects/DSA2/Red-Black.h
 

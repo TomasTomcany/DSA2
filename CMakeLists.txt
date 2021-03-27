@@ -3,4 +3,4 @@ project(DSA_trees_hashes C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(DSA_trees_hashes main.c Black-Red.c)
+add_executable(DSA_trees_hashes main.c Red-Black.c AVL.c AVL.h Red-Black.h)

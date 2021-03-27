@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tomca\CLionProjects\DSA_trees_hashes
+CMAKE_SOURCE_DIR = C:\Users\tomca\CLionProjects\DSA2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tomca\CLionProjects\DSA_trees_hashes\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\tomca\CLionProjects\DSA2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = C:\Users\tomca\CLionProjects\DSA_trees_hashes\cmake-build-deb
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tomca\CLionProjects\DSA_trees_hashes\cmake-build-debug\CMakeFiles C:\Users\tomca\CLionProjects\DSA_trees_hashes\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tomca\CLionProjects\DSA2\cmake-build-debug\CMakeFiles C:\Users\tomca\CLionProjects\DSA2\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tomca\CLionProjects\DSA_trees_hashes\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tomca\CLionProjects\DSA2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,32 +142,59 @@ DSA_trees_hashes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/build
 .PHONY : DSA_trees_hashes/fast
 
-Black-Red.obj: Black-Red.c.obj
+AVL.obj: AVL.c.obj
 
-.PHONY : Black-Red.obj
+.PHONY : AVL.obj
 
 # target to build an object file
-Black-Red.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Black-Red.c.obj
-.PHONY : Black-Red.c.obj
+AVL.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/AVL.c.obj
+.PHONY : AVL.c.obj
 
-Black-Red.i: Black-Red.c.i
+AVL.i: AVL.c.i
 
-.PHONY : Black-Red.i
+.PHONY : AVL.i
 
 # target to preprocess a source file
-Black-Red.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Black-Red.c.i
-.PHONY : Black-Red.c.i
+AVL.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/AVL.c.i
+.PHONY : AVL.c.i
 
-Black-Red.s: Black-Red.c.s
+AVL.s: AVL.c.s
 
-.PHONY : Black-Red.s
+.PHONY : AVL.s
 
 # target to generate assembly for a file
-Black-Red.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Black-Red.c.s
-.PHONY : Black-Red.c.s
+AVL.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/AVL.c.s
+.PHONY : AVL.c.s
+
+Red-Black.obj: Red-Black.c.obj
+
+.PHONY : Red-Black.obj
+
+# target to build an object file
+Red-Black.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Red-Black.c.obj
+.PHONY : Red-Black.c.obj
+
+Red-Black.i: Red-Black.c.i
+
+.PHONY : Red-Black.i
+
+# target to preprocess a source file
+Red-Black.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Red-Black.c.i
+.PHONY : Red-Black.c.i
+
+Red-Black.s: Red-Black.c.s
+
+.PHONY : Red-Black.s
+
+# target to generate assembly for a file
+Red-Black.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Red-Black.c.s
+.PHONY : Red-Black.c.s
 
 main.obj: main.c.obj
 
@@ -205,9 +232,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSA_trees_hashes
-	@echo ... Black-Red.obj
-	@echo ... Black-Red.i
-	@echo ... Black-Red.s
+	@echo ... AVL.obj
+	@echo ... AVL.i
+	@echo ... AVL.s
+	@echo ... Red-Black.obj
+	@echo ... Red-Black.i
+	@echo ... Red-Black.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

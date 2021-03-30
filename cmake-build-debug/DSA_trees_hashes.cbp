@@ -89,6 +89,12 @@
 		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/main.c">
 			<Option target="DSA_trees_hashes"/>
 		</Unit>
+		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/quadratic_probing.c">
+			<Option target="DSA_trees_hashes"/>
+		</Unit>
+		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/quadratic_probing.h">
+			<Option target="DSA_trees_hashes"/>
+		</Unit>
 		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

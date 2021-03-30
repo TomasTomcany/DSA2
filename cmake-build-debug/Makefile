@@ -223,6 +223,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/main.c.s
 .PHONY : main.c.s
 
+quadratic_probing.obj: quadratic_probing.c.obj
+
+.PHONY : quadratic_probing.obj
+
+# target to build an object file
+quadratic_probing.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/quadratic_probing.c.obj
+.PHONY : quadratic_probing.c.obj
+
+quadratic_probing.i: quadratic_probing.c.i
+
+.PHONY : quadratic_probing.i
+
+# target to preprocess a source file
+quadratic_probing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/quadratic_probing.c.i
+.PHONY : quadratic_probing.c.i
+
+quadratic_probing.s: quadratic_probing.c.s
+
+.PHONY : quadratic_probing.s
+
+# target to generate assembly for a file
+quadratic_probing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/quadratic_probing.c.s
+.PHONY : quadratic_probing.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -241,6 +268,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... quadratic_probing.obj
+	@echo ... quadratic_probing.i
+	@echo ... quadratic_probing.s
 .PHONY : help
 
 

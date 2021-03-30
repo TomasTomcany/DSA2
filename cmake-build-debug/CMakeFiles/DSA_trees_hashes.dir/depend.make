@@ -8,4 +8,7 @@ CMakeFiles/DSA_trees_hashes.dir/Red-Black.c.obj: ../Red-Black.c
 CMakeFiles/DSA_trees_hashes.dir/main.c.obj: ../AVL.h
 CMakeFiles/DSA_trees_hashes.dir/main.c.obj: ../Red-Black.h
 CMakeFiles/DSA_trees_hashes.dir/main.c.obj: ../main.c
+CMakeFiles/DSA_trees_hashes.dir/main.c.obj: ../quadratic_probing.h
+
+CMakeFiles/DSA_trees_hashes.dir/quadratic_probing.c.obj: ../quadratic_probing.c
 

@@ -4,18 +4,18 @@
 
 #include "AVL.h"
 #include "Red-Black.h"
+#include "quadratic_probing.h"
 
-void tree_tester(){
+void tree_tester(long size){
     node *root1 = NULL;                         // initializing root of the tree
     struct node *root2 = NULL;
-    long size = 1000000;                        // size of tree and range of values
     srand(time(NULL));                 // setting random number generator
 
     // test insert avl
     clock_t start = clock();
     for(long i=0;i<size;i++)
     {
-        root1=insert(root1,(rand() % size*10)+1);
+        root1=insert(root1,((rand()%10000)+1)*((rand()%10000)+1));
     }
     clock_t stop = clock();
     double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
@@ -24,7 +24,7 @@ void tree_tester(){
     // test insert red-black
     start = clock();
     for (int i = 0; i < size; ++i)
-        insert_rb(&root2, (rand() % size*10)+1);
+        insert_rb(&root2, ((rand()%10000)+1)*((rand()%10000)+1));
     stop = clock();
     elapsed = (double)(stop - start)  * 1000/ CLOCKS_PER_SEC;
     printf("Operation insert of Red_Black tree in ms: %f\n",elapsed);
@@ -33,7 +33,7 @@ void tree_tester(){
     start = clock();
     for(long i=0;i<size;i++)
     {
-        search(root1, (rand() % size*10)+1);
+        search(root1, ((rand()%10000)+1)*((rand()%10000)+1));
     }
     stop = clock();
     elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
@@ -43,14 +43,38 @@ void tree_tester(){
     start = clock();
     for(long i=0;i<size;i++)
     {
-        search_rb(root2, (rand() % size*10)+1);
+        search_rb(root2, ((rand()%10000)+1)*((rand()%10000)+1));
     }
     stop = clock();
     elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
     printf("Operation search of Red-Black tree in ms: %f\n", elapsed);
 }
 
+void hash_table_tester(long size){
+    hash_table *table = init_table(size);
+    srand(time(NULL));
+
+    clock_t start = clock();
+    for(long i=0;i<size;i++)
+    {
+        insert_quad(table, ((rand()%10000)+1)*((rand()%10000)+1), i+1);
+    }
+    clock_t stop = clock();
+    double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
+    printf("Operation insert of quadratic probing in ms: %f\n", elapsed);
+
+    start = clock();
+    for(long i=0;i<size;i++)
+    {
+        search_quad(table, ((rand()%10000)+1)*((rand()%10000)+1));
+    }
+    stop = clock();
+    elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
+    printf("Operation search of quadratic probing in ms: %f\n", elapsed);
+}
+
 int main(void){
-    tree_tester();
+    for (int i = 0; i<5;i++){tree_tester(10000000);}
+    //hash_table_tester(1000000);
     return 0;
 }

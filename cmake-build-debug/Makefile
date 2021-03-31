@@ -169,6 +169,33 @@ AVL.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/AVL.c.s
 .PHONY : AVL.c.s
 
+Chaining.obj: Chaining.c.obj
+
+.PHONY : Chaining.obj
+
+# target to build an object file
+Chaining.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Chaining.c.obj
+.PHONY : Chaining.c.obj
+
+Chaining.i: Chaining.c.i
+
+.PHONY : Chaining.i
+
+# target to preprocess a source file
+Chaining.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Chaining.c.i
+.PHONY : Chaining.c.i
+
+Chaining.s: Chaining.c.s
+
+.PHONY : Chaining.s
+
+# target to generate assembly for a file
+Chaining.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA_trees_hashes.dir\build.make CMakeFiles/DSA_trees_hashes.dir/Chaining.c.s
+.PHONY : Chaining.c.s
+
 Red-Black.obj: Red-Black.c.obj
 
 .PHONY : Red-Black.obj
@@ -262,6 +289,9 @@ help:
 	@echo ... AVL.obj
 	@echo ... AVL.i
 	@echo ... AVL.s
+	@echo ... Chaining.obj
+	@echo ... Chaining.i
+	@echo ... Chaining.s
 	@echo ... Red-Black.obj
 	@echo ... Red-Black.i
 	@echo ... Red-Black.s

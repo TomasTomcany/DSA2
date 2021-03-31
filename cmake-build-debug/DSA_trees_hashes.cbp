@@ -80,6 +80,12 @@
 		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/AVL.h">
 			<Option target="DSA_trees_hashes"/>
 		</Unit>
+		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/Chaining.c">
+			<Option target="DSA_trees_hashes"/>
+		</Unit>
+		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/Chaining.h">
+			<Option target="DSA_trees_hashes"/>
+		</Unit>
 		<Unit filename="C:/Users/tomca/CLionProjects/DSA2/Red-Black.c">
 			<Option target="DSA_trees_hashes"/>
 		</Unit>

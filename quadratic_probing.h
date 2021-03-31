@@ -15,6 +15,7 @@ ht_item* create_item(unsigned long key, unsigned long value);
 hash_table* init_table(unsigned long size);
 int search_quad(hash_table* table, unsigned long key);
 void insert_quad(hash_table* table, unsigned long key, unsigned long value);
+void free_ht_table(hash_table *table);
 
 
 #endif //DSA_TREES_HASHES_QUADRATIC_PROBING_H

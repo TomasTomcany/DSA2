@@ -71,8 +71,7 @@ void insert_quad(hash_table* table, unsigned long key, unsigned long value){
         // formula for getting the next index to search with quadratic probing
         index = (index + iteration*iteration)%table->size;
 
-        if (index == base_index){
-            printf("No space in hash table.");
+        if (index == base_index){               // no space in hash table
             return;
         }
     }
@@ -95,4 +94,15 @@ hash_table* resize_table(hash_table *table, unsigned long size) {
 
     table->size = size;                                 // changing the size value
     return table;
+}
+
+void free_ht_table(hash_table *table){
+    for (unsigned long i = 0; i<table->size; i++){          // freeing all items in table
+        if (table->items[i] != NULL){
+            free(table->items[i]);
+        }
+    }
+
+    free(table->items);                                     // freeing array of items
+    free(table);                                            // freeing hash table
 }
